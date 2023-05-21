@@ -1,0 +1,27 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.5.33414.496
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "projektpk4", "projektpk4\projektpk4.csproj", "{71BDD750-DB4B-4B2E-BAEB-D2A730247DC5}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Elementy rozwiązania", "Elementy rozwiązania", "{93DF5714-F486-4104-9939-F2AA1D0A7FEF}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{71BDD750-DB4B-4B2E-BAEB-D2A730247DC5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{71BDD750-DB4B-4B2E-BAEB-D2A730247DC5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{71BDD750-DB4B-4B2E-BAEB-D2A730247DC5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{71BDD750-DB4B-4B2E-BAEB-D2A730247DC5}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {324CE225-0936-4C9F-9E2D-E242B99CB09B}
+	EndGlobalSection
+EndGlobal

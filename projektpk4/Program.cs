@@ -10,7 +10,8 @@ namespace projektpk4
         {
 
             // Czytnik.Czytaj();
-            Pytanie.przypisanie();
+
+            Quiz_Controls b = new Quiz_Controls();
 
             ApplicationConfiguration.Initialize();
             Application.Run(new Form1());

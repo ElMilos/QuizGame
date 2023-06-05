@@ -5,7 +5,7 @@ Pytanie 3
 Pytanie 4
 
 Ile pytan widzisz
-Pytanie 1
-Pytanie 2
-@Pytanie 3
-Pytanie 4
+Pytanie 11
+Pytanie 22
+@Pytanie 33
+Pytanie 44

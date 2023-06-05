@@ -1,3 +1,5 @@
+using System.Collections.Generic;
+
 namespace projektpk4
 {
     public partial class Form1 : Form
@@ -6,6 +8,7 @@ namespace projektpk4
         public Form1()
         {
             InitializeComponent();
+            Quiz_Controls.Next_Question();
         }
 
         private void Form1_Load(object sender, EventArgs e)
@@ -15,22 +18,22 @@ namespace projektpk4
 
          private void button1_Click(object sender, EventArgs e)
         {
-           string a =Quiz_Controls.Quiz_Cont();
-            button4.Text = a;
+
+            Quiz_Controls.Check(button1.Text);
         }
         private void button2_Click(object sender, EventArgs e)
         {
-            button4.Text = "button2";
+            Quiz_Controls.Check(button2.Text);
         }
           
         private void button3_Click(object sender, EventArgs e)
         {
-            button4.Text = "button3";
+            Quiz_Controls.Check(button3.Text);
         }
 
         private void button4_Click(object sender, EventArgs e)
         {
-            button4.Text = "button4";
+            Quiz_Controls.Check(button4.Text);
         }
 
 

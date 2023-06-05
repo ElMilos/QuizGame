@@ -107,11 +107,32 @@
         }
 
         #endregion
+        //zmienne 
 
-        private Button button1;
-        private Button button2;
-        private Button button3;
-        private Button button4;
-        private Label Pytanie_Form;
+        static private Button button1;
+        static private Button button2;
+        static private Button button3;
+        static private Button button4;
+        static private Label Pytanie_Form;
+
+
+        // get'ery i set'ery
+       static public string Button1
+        {
+            get { return button1.Text; }
+            set { button1.Text = value; }
+        }
+
+        static public string Button2
+        { get { return button2.Text; } set {  button2.Text = value; } }
+
+        static public string Button3
+        { get { return button3.Text; } set {  button3.Text = value; } }
+
+        static public string Button4
+        { get { return button4.Text; } set {  button4.Text = value; } }
+
+        static public string pytanie_form
+        { get { return Pytanie_Form.Text; } set { Pytanie_Form.Text = value;} }
     }
 }

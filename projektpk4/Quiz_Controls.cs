@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -8,25 +9,74 @@ namespace projektpk4
 {
     internal class Quiz_Controls
     {
+        static private List<Pytanie> list = Pytanie.Quiz_List();
+        static private int question_count = list.Count;
 
-       static private List<Pytanie> list;
 
-        static public string Quiz_Cont()
+       static List<int> numbers = new List<int>();
+       static Random random = new Random();
+       static int randomNumber = random.Next(0, question_count);
+       static int i = 0;
+
+        static public void Quiz_Count()
         {
-            list = Pytanie.Quiz_List();
-            string A =Pytanie.get_A(list,0);
 
-            return A;
+            MessageBox.Show(question_count.ToString());
+
+        }
+
+        static public void Next_Question()
+        {
+            int n = 0;
+            while (n == 0) 
+            {
+
+                randomNumber = random.Next(0, question_count);
+
+
+                if (!numbers.Contains(randomNumber))
+                {
+                    Form1.Button1 = Pytanie.get_A(list, randomNumber);
+                    Form1.Button2 = Pytanie.get_B(list, randomNumber);
+                    Form1.Button3 = Pytanie.get_C(list, randomNumber);
+                    Form1.Button4 = Pytanie.get_D(list, randomNumber);
+                    Form1.pytanie_form = Pytanie.get_Pytanie(list, randomNumber);
+
+                    numbers.Add(randomNumber);
+                    n = 1;
+                }
+
+
+
+            }
+            i++;
+
 
 
         }
 
-        static private void Check(string button)
+        static public void Check(string button_text)
         {
-            if(button==(Pytanie.get_Pytanie(list, 0)))
+            if (i == question_count)
             {
+                MessageBox.Show("koniec pytan");
+                System.Windows.Forms.Application.Exit();
 
             }
+
+
+           else if (button_text==(Pytanie.get_Odp(list, randomNumber)))
+            {
+               Next_Question();
+            }
+
+
+            else
+            {
+                MessageBox.Show("przegrałes");
+            }
+
+
         }
 
     }

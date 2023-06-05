@@ -9,12 +9,15 @@ namespace projektpk4
         static void Main()
         {
 
-            // Czytnik.Czytaj();
 
-            Quiz_Controls b = new Quiz_Controls();
+           // idk po co to xD chyba coœ sprawdza³em Quiz_Controls b = new Quiz_Controls();
+
+
 
             ApplicationConfiguration.Initialize();
+            
             Application.Run(new Form1());
+
 
 
         }

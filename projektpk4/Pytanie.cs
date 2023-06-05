@@ -6,7 +6,9 @@ using System.Threading.Tasks;
 
 using System.Text.RegularExpressions;
 using static System.Net.Mime.MediaTypeNames;
+
 using System.Security.Cryptography.X509Certificates;
+
 
 namespace projektpk4
 {
@@ -19,6 +21,7 @@ namespace projektpk4
         string OdpC;
         string OdpD;
         string OdpPrawidlowa;
+
 
 
         public Pytanie(string pytaniee, string Odpa, string Odpb, string Odpc, string Odpd, string Odpprawidlowa)
@@ -51,32 +54,37 @@ namespace projektpk4
                 {
                     Answer = regex.Replace(lines[n], "");
                     lines[n] = Answer;
-
                 }
 
                 if (string.IsNullOrWhiteSpace(lines[n]))
                 {
+
                     list.Add(new Pytanie(lines[n - 5], lines[n - 4], lines[n - 3], lines[n - 2], lines[n - 1], Answer));
                     /*
+
                     Quest = lines[n - 5];
                     A=lines[n-4];
                     B=lines[n-3];
                     C=lines[n-2];
                     D=lines[n-1];
+
                     MessageBox.Show(Quest+A+B+C+D+Answer);
                     */
+
+
                 }
 
             }
 
-                return list;
+
+            return list;
         }
         static public void showw(List<Pytanie> list)
         {
             MessageBox.Show(list[0].pytanie + list[0].OdpA + list[0].OdpB + list[0].OdpC + list[0].OdpD + list[0].OdpPrawidlowa);
         }
 
-        static public string get_A(List<Pytanie> list,int n)
+        static public string get_A(List<Pytanie> list, int n)
         {
             return list[n].OdpA;
         }
@@ -100,5 +108,11 @@ namespace projektpk4
         {
             return list[n].OdpPrawidlowa;
         }
+
+
     }
+
+
 }
+
+

@@ -15,8 +15,8 @@ namespace projektpk4
 
 
             ApplicationConfiguration.Initialize();
-            
-            Application.Run(new Form1());
+
+            Application.Run(new Ranking_form());
 
 
 

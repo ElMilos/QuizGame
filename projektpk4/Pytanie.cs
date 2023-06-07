@@ -37,13 +37,15 @@ namespace projektpk4
         static public List<Pytanie> Quiz_List()
         {
             List<Pytanie> list = new List<Pytanie>();
-            string A, B, C, D, Quest, Answer = "";
+
+
             string file = "E:\\Proejkt\\projektpk4\\projektpk4\\Quiz.txt";
             string filetext = Czytnik.Czytaj(file);
 
+
             string pattern = "@";
             Regex regex = new Regex(pattern);
-
+            string Answer = "";
 
             string[] lines = filetext.Split('\n'); // pętla przypisująca pytania i odp
 

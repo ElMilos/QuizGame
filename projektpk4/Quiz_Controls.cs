@@ -57,7 +57,7 @@ namespace projektpk4
 
         static public void Check(string button_text)
         {
-            if (i == question_count)
+            if (i == question_count&& button_text == (Pytanie.get_Odp(list, randomNumber)))
             {
                 MessageBox.Show("koniec pytan");
                 System.Windows.Forms.Application.Exit();

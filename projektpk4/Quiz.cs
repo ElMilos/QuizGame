@@ -7,10 +7,12 @@ using System.Threading.Tasks;
 
 namespace projektpk4
 {
-    internal class Quiz_Controls
+    internal class Quiz
     {
-        static private List<Pytanie> list = Pytanie.Quiz_List();
-        static private int question_count = list.Count;
+       static Pytanie_Controls Hold = new Pytanie_Controls(); 
+       static private List<Pytanie> list = Hold.Quiz_List();
+       static private int question_count = list.Count;
+
 
 
        static List<int> numbers = new List<int>();
@@ -18,12 +20,6 @@ namespace projektpk4
        static int randomNumber = random.Next(0, question_count);
        static int i = 0;
 
-        static public void Quiz_Count()
-        {
-
-            MessageBox.Show(question_count.ToString());
-
-        }
 
         static public void Next_Question()
         {
@@ -55,6 +51,10 @@ namespace projektpk4
 
         }
 
+
+
+
+
         static public void Check(string button_text)
         {
             if (i == question_count&& button_text == (Pytanie.get_Odp(list, randomNumber)))
@@ -75,6 +75,8 @@ namespace projektpk4
             {
                 MessageBox.Show("przegrałes");
             }
+
+
 
 
         }

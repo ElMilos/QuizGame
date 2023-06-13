@@ -15,7 +15,8 @@ namespace projektpk4
         public Ranking_form()
         {
             InitializeComponent();
-            textBox1.Text = Ranking_Controls.load_ranking();
+            Ranking_Controls hold = new Ranking_Controls();
+            textBox1.Text = hold.load_ranking();
         }
 
         private void textBox1_TextChanged(object sender, EventArgs e)

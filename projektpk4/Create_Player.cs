@@ -20,11 +20,13 @@ namespace projektpk4
         private void Start_Quiz_Click(object sender, EventArgs e)
         {
 
-            if (Player_name.Text != "")
+            if (Player_name.Text != "") // sprawdzić czy nie jest puste
             {
                Gracz gracz= new Gracz(Player_name.Text);
 
                // MessageBox.Show(gracz.nazwa); 
+
+
                 this.Hide();
                 var form1 = new Form1();
                 form1.Closed += (s, args) => this.Close();

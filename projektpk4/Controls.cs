@@ -8,11 +8,11 @@ using System.IO;
 
 namespace projektpk4
 {
-   internal class Czytnik
+   abstract class Controls
     {
-
-
-        static public string Czytaj(string file)
+        public abstract string Czytaj();
+        /*
+          public string Czytaj(string file)
         {
             string filestring = "";
 
@@ -27,6 +27,7 @@ namespace projektpk4
 
             return filestring;
         }
+        */
     }
 }
 

@@ -1,4 +1,4 @@
-1 ja
-2 ty 
-3 on 
-4 ona
+a 10
+ty 8
+on 5
+ona 2

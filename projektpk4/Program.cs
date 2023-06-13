@@ -10,13 +10,12 @@ namespace projektpk4
         {
 
 
-           // idk po co to xD chyba coœ sprawdza³em Quiz_Controls b = new Quiz_Controls();
-
-
 
             ApplicationConfiguration.Initialize();
 
-            Application.Run(new Ranking_form());
+           // Ranking_Controls.load_ranking();
+
+            Application.Run(new menu());
 
 
 

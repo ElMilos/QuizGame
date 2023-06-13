@@ -26,6 +26,12 @@ namespace projektpk4
         private void button1_Click(object sender, EventArgs e)
         {
 
+            this.Hide();
+            var form1 = new menu();
+            form1.Closed += (s, args) => this.Close();
+            form1.Show();
+
+
         }
     }
 }

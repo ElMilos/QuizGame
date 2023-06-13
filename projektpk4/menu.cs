@@ -31,6 +31,11 @@ namespace projektpk4
         private void Ranking_Click(object sender, EventArgs e)
         {
 
+            this.Hide();
+            var form1 = new Ranking_form();
+            form1.Closed += (s, args) => this.Close();
+            form1.Show();
+
         }
 
         private void End_Click(object sender, EventArgs e)

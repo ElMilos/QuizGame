@@ -47,7 +47,7 @@ namespace projektpk4
             Regex regex = new Regex(pattern);
             string Answer = "";
 
-            string[] lines = filetext.Split('\n'); // pętla przypisująca pytania i odp
+            string[] lines = filetext.Split('\n'); // rozdziela wiersze string na osobne zmienne string
 
             for (int n = 0; n < lines.Length; n++)
             {

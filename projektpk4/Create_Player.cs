@@ -22,14 +22,15 @@ namespace projektpk4
 
             if (Player_name.Text != "")
             {
-                Gracz gracz= new Gracz(Player_name.Text);
+               Gracz gracz= new Gracz(Player_name.Text);
 
                // MessageBox.Show(gracz.nazwa); 
                 this.Hide();
-
                 var form1 = new Form1();
                 form1.Closed += (s, args) => this.Close();
                 form1.Show();
+
+
             }
         }
 

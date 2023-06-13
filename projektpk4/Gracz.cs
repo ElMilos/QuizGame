@@ -8,9 +8,15 @@ namespace projektpk4
 {
     internal class Gracz
     {
-        int punkty;
-       public string nazwa;
-        public Gracz(string n) { punkty = 0; nazwa = n; }
+      public  int punkty;
+      public  string nazwa;
+
+        public Gracz(string n, int p=0) 
+        {
+            nazwa = n;
+            punkty = p; 
+
+        }
 
 
     }

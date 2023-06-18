@@ -9,12 +9,12 @@ namespace projektpk4
     internal class Pytanie
     {
 
-        string pytanie;
-        string OdpA;
-        string OdpB;
-        string OdpC;
-        string OdpD;
-        string OdpPrawidlowa;
+      private string pytanie;
+      private string OdpA;
+      private string OdpB;
+      private string OdpC;
+      private string OdpD;
+      private string OdpPrawidlowa;
         public Pytanie(string pytaniee, string Odpa, string Odpb, string Odpc, string Odpd, string Odpprawidlowa)
         {
             pytanie = pytaniee;

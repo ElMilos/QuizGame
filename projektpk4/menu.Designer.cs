@@ -39,7 +39,7 @@
             Start_Game.Name = "Start_Game";
             Start_Game.Size = new Size(75, 23);
             Start_Game.TabIndex = 0;
-            Start_Game.Text = "button1";
+            Start_Game.Text = "Start";
             Start_Game.UseVisualStyleBackColor = true;
             Start_Game.Click += Start_Game_Click;
             // 
@@ -49,7 +49,7 @@
             Ranking.Name = "Ranking";
             Ranking.Size = new Size(75, 23);
             Ranking.TabIndex = 1;
-            Ranking.Text = "button2";
+            Ranking.Text = "Ranking";
             Ranking.UseVisualStyleBackColor = true;
             Ranking.Click += Ranking_Click;
             // 
@@ -59,7 +59,7 @@
             End.Name = "End";
             End.Size = new Size(75, 23);
             End.TabIndex = 2;
-            End.Text = "button3";
+            End.Text = "Exit";
             End.UseVisualStyleBackColor = true;
             End.Click += End_Click;
             // 

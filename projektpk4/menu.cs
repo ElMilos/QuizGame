@@ -23,6 +23,8 @@ namespace projektpk4
 
             this.Hide();
             var form1 = new Create_Player();
+            form1.StartPosition = FormStartPosition.Manual;
+            form1.Location = this.Location;
             form1.Closed += (s, args) => this.Close();
             form1.Show();
 
@@ -33,6 +35,8 @@ namespace projektpk4
 
             this.Hide();
             var form1 = new Ranking_form();
+            form1.StartPosition = FormStartPosition.Manual;
+            form1.Location = this.Location;
             form1.Closed += (s, args) => this.Close();
             form1.Show();
 
@@ -40,7 +44,10 @@ namespace projektpk4
 
         private void End_Click(object sender, EventArgs e)
         {
-            this.Close();   
+
+            Ranking_Controls.save_Ranking();
+
+            this.Close();
         }
     }
 }

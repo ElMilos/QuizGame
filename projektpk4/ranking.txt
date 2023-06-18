@@ -1,4 +1,3 @@
-a 10
-ty 8
-on 5
-ona 2
+a 2
+a 2
+asdasdasd 2

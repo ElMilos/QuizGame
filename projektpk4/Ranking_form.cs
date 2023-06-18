@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using static System.Windows.Forms.DataFormats;
 
 namespace projektpk4
 {
@@ -16,7 +17,7 @@ namespace projektpk4
         {
             InitializeComponent();
             Ranking_Controls hold = new Ranking_Controls();
-            textBox1.Text = hold.load_ranking();
+            textBox1.Text = hold.Show_List();
         }
 
         private void textBox1_TextChanged(object sender, EventArgs e)
@@ -29,6 +30,10 @@ namespace projektpk4
 
             this.Hide();
             var form1 = new menu();
+
+            form1.StartPosition = FormStartPosition.Manual;
+            form1.Location = this.Location;
+
             form1.Closed += (s, args) => this.Close();
             form1.Show();
 

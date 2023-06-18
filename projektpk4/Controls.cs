@@ -11,23 +11,7 @@ namespace projektpk4
    abstract class Controls
     {
         public abstract string Czytaj();
-        /*
-          public string Czytaj(string file)
-        {
-            string filestring = "";
 
-            if (File.Exists(file))
-            {
-                filestring = File.ReadAllText(file);
-            }
-            else
-            {
-                MessageBox.Show("Plik z pytaniami nie istnieje.");
-            }
-
-            return filestring;
-        }
-        */
     }
 }
 

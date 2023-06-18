@@ -13,10 +13,10 @@ namespace projektpk4
 
             ApplicationConfiguration.Initialize();
 
-           // Ranking_Controls.load_ranking();
+            // Ranking_Controls.load_ranking();
+            Ranking_Controls.load_ranking();
 
             Application.Run(new menu());
-
 
 
         }

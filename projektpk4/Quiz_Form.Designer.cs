@@ -1,6 +1,6 @@
 ﻿namespace projektpk4
 {
-    partial class Form1
+    partial class Quiz_Form
     {
         /// <summary>
         ///  Required designer variable.
@@ -87,8 +87,9 @@
             Pytanie_Form.Size = new Size(214, 17);
             Pytanie_Form.TabIndex = 4;
             Pytanie_Form.Text = "TUtaj znajude sie bardzo dlugie pytanie";
+            Pytanie_Form.Click += Pytanie_Form_Click;
             // 
-            // Form1
+            // Quiz_Form
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
@@ -99,15 +100,12 @@
             Controls.Add(button3);
             Controls.Add(button2);
             Controls.Add(button1);
-            Name = "Form1";
+            Name = "Quiz_Form";
             Text = "Form1";
             Load += Form1_Load;
             ResumeLayout(false);
             PerformLayout();
         }
-
-        #endregion
-        //zmienne 
 
         static private Button button1;
         static private Button button2;
@@ -115,24 +113,26 @@
         static private Button button4;
         static private Label Pytanie_Form;
 
+        #endregion
+
 
         // get'ery i set'ery
-       static public string Button1
+        static public string Button1
         {
             get { return button1.Text; }
             set { button1.Text = value; }
         }
 
         static public string Button2
-        { get { return button2.Text; } set {  button2.Text = value; } }
+        { get { return button2.Text; } set { button2.Text = value; } }
 
         static public string Button3
-        { get { return button3.Text; } set {  button3.Text = value; } }
+        { get { return button3.Text; } set { button3.Text = value; } }
 
         static public string Button4
-        { get { return button4.Text; } set {  button4.Text = value; } }
+        { get { return button4.Text; } set { button4.Text = value; } }
 
         static public string pytanie_form
-        { get { return Pytanie_Form.Text; } set { Pytanie_Form.Text = value;} }
+        { get { return Pytanie_Form.Text; } set { Pytanie_Form.Text = value; } }
     }
 }

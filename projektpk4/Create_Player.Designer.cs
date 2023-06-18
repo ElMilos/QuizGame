@@ -39,7 +39,7 @@
             Start_Quiz.Name = "Start_Quiz";
             Start_Quiz.Size = new Size(75, 23);
             Start_Quiz.TabIndex = 0;
-            Start_Quiz.Text = "button1";
+            Start_Quiz.Text = "Graj";
             Start_Quiz.UseVisualStyleBackColor = true;
             Start_Quiz.Click += Start_Quiz_Click;
             // 

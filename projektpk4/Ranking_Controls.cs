@@ -117,11 +117,17 @@ namespace projektpk4
                 playerData = playerData.Remove(lastIndex, 1);
             }
 
-            using (FileStream fs = File.Create("E:\\Proejkt\\projektpk4\\projektpk4\\ranking.txt"))
+
+            try
             {
-                byte[] info = new UTF8Encoding(true).GetBytes(playerData);
-                fs.Write(info, 0, info.Length);
+                File.WriteAllText("E:\\Proejkt\\projektpk4\\projektpk4\\ranking.txt", playerData);
             }
+            catch (IOException ex)
+            {
+                Console.WriteLine("Wystąpił błąd podczas zapisu do pliku: " + ex.Message);
+            }
+
+
         }
 
     }

@@ -9,14 +9,24 @@ namespace projektpk4
         static void Main()
         {
 
-
-
             ApplicationConfiguration.Initialize();
 
-            // Ranking_Controls.load_ranking();
-            Ranking_Controls.load_ranking();
 
-            Application.Run(new menu());
+
+            Thread thread1 = new Thread(Ranking_Controls.load_ranking);
+            thread1.Start();
+
+            Thread thread2 = new Thread(() =>
+            {
+                Application.Run(new menu());
+            });
+            thread2.Start();
+
+            thread1.Join();
+            thread2.Join();
+
+            // Ranking_Controls.load_ranking();
+            //Application.Run(new menu());
 
 
         }

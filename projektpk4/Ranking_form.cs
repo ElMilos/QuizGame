@@ -39,5 +39,10 @@ namespace projektpk4
 
 
         }
+
+        private void Ranking_form_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

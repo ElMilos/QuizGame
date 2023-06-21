@@ -1,11 +1,17 @@
 Ile pytan widzisz
-@Pytanie_Controls 1
-Pytanie_Controls 2
-Pytanie_Controls 3
-Pytanie_Controls 4
+1
+2
+3
+@4
 
 Najwieksza rzeka w Polsce
 Odra
 Przemasza
 @Wisla
 Oka
+
+Jaki kolor ma trawa
+czerwony
+@zielony
+niebieski
+ró¿owy

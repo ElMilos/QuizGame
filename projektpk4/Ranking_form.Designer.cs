@@ -44,6 +44,7 @@
             // 
             // textBox1
             // 
+            textBox1.BackColor = SystemColors.Info;
             textBox1.Location = new Point(237, 58);
             textBox1.Multiline = true;
             textBox1.Name = "textBox1";
@@ -55,11 +56,13 @@
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
+            BackColor = SystemColors.WindowFrame;
             ClientSize = new Size(800, 450);
             Controls.Add(textBox1);
             Controls.Add(button1);
             Name = "Ranking_form";
             Text = "Ranking_form";
+            Load += Ranking_form_Load;
             ResumeLayout(false);
             PerformLayout();
         }

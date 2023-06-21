@@ -45,6 +45,7 @@
             // 
             // Player_name
             // 
+            Player_name.BackColor = SystemColors.InactiveCaption;
             Player_name.Location = new Point(283, 172);
             Player_name.Name = "Player_name";
             Player_name.Size = new Size(228, 23);
@@ -54,6 +55,7 @@
             // label1
             // 
             label1.AutoSize = true;
+            label1.BackColor = SystemColors.Info;
             label1.Location = new Point(359, 69);
             label1.Name = "label1";
             label1.Size = new Size(75, 15);
@@ -64,6 +66,7 @@
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
+            BackColor = SystemColors.WindowFrame;
             ClientSize = new Size(800, 450);
             Controls.Add(label1);
             Controls.Add(Player_name);

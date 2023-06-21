@@ -67,6 +67,7 @@
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
+            BackColor = SystemColors.WindowFrame;
             ClientSize = new Size(800, 450);
             Controls.Add(End);
             Controls.Add(Ranking);

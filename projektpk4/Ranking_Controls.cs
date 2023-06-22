@@ -22,7 +22,7 @@ namespace projektpk4
         {
            
             
-                string file = "E:\\Proejkt\\projektpk4\\projektpk4\\ranking.txt";
+                string file = "E:\\Proejkt\\projektpk4\\projektpk4\\ranking.txt"; 
                 string filestring = "";
 
                 if (File.Exists(file))
@@ -46,14 +46,14 @@ namespace projektpk4
   
 
 
-            Controls B = new Ranking_Controls(); // sprawdzenie polimorfizmu
+            Controls B = new Ranking_Controls(); 
             string filetext = B.Czytaj();
 
 
-            string[] slowa = filetext.Split('\n'); // rozdziela wiersze string na osobne zmienne string
+            string[] slowa = filetext.Split('\n'); 
 
 
-            // Przechodzenie przez każde słowo w tablicy
+
             foreach (string podzial in slowa)
             {
                 string[] slowo = podzial.Split(' ');
@@ -65,7 +65,7 @@ namespace projektpk4
 
             }
 
-            if (Player_List.Count > set_limit) // zabezpieczenie przed zadużą ilośćią gracz
+            if (Player_List.Count > set_limit) 
             {
                 Player_List.RemoveRange(set_limit, Player_List.Count - set_limit);
             }
@@ -99,7 +99,7 @@ namespace projektpk4
             Player_List= Updated_List;
 
 
-            if (Player_List.Count > set_limit) // zabezpieczenie przed zadużą ilośćią gracz
+            if (Player_List.Count > set_limit)
             {
                 Player_List.RemoveRange(set_limit, Player_List.Count - set_limit);
             }

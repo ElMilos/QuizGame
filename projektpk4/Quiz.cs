@@ -97,8 +97,8 @@ namespace projektpk4
                 MessageBox.Show("Zła Odpowiedz");
                 check_with_ranks();
 
-                used_questions = 0; // zerowanie uyżytych pytań
-                numbers.Clear(); // czyszczenie listy z użytymi pytaniami
+                used_questions = 0; 
+                numbers.Clear(); 
 
                 return false;
             }

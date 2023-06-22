@@ -38,7 +38,7 @@ namespace projektpk4
         {
             List<Pytanie> list = new List<Pytanie>();
 
-            Controls A = new Pytanie_Controls(); // sprawdzenie polimorfizmu
+            Controls A = new Pytanie_Controls(); 
             string filetext = A.Czytaj();
 
 
@@ -46,7 +46,7 @@ namespace projektpk4
             Regex regex = new Regex(pattern);
             string Answer = "";
 
-            string[] lines = filetext.Split('\n'); // rozdziela wiersze string na osobne zmienne string
+            string[] lines = filetext.Split('\n'); 
 
             for (int n = 0; n < lines.Length; n++)
             {

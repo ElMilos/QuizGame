@@ -9,7 +9,7 @@ namespace projektpk4
         static void Main()
         {
 
-            //ApplicationConfiguration.Initialize();
+
 
 
             Thread thread1 = new Thread(() => ApplicationConfiguration.Initialize());
@@ -30,8 +30,6 @@ namespace projektpk4
             thread2.Join();
             thread3.Join();
 
-            // Ranking_Controls.load_ranking();
-            //Application.Run(new menu());
 
 
         }

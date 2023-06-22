@@ -22,7 +22,7 @@ namespace projektpk4
         private void Start_Quiz_Click(object sender, EventArgs e)
         {
 
-            if (!string.IsNullOrWhiteSpace(Player_name.Text)) // sprawdzić czy nie jest puste
+            if (!string.IsNullOrWhiteSpace(Player_name.Text))
             {
                 Quiz.send_name(Player_name.Text);
 

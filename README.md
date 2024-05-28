@@ -1,3 +1,4 @@
 #Quiz
 
-Napisana prosta gra typu Quiz z losowaniem pytań
+Prosta gra typu quiz z losowaniem pytań i scorebordem,
+stworzona przy pomocy języka C# oraz platformy .NET 
